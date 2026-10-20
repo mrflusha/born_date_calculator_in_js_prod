@@ -1,0 +1,391 @@
+﻿ @font-face {
+    font-family: sunnyspell;
+    src: url("../fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf") format("opentype");
+} 
+
+@font-face {
+    font-family: motley; /* Гарнитура шрифта */
+    src: url('../fonts//motley-forces-font/MotleyForcesRegular-w1rZ3.ttf'); /* Путь к файлу со шрифтом */
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+
+}
+
+
+
+body{
+
+
+	display: flex;	
+	justify-content: space-between;
+	align-items: stretch;
+	
+	flex-direction: column;
+	background-color: #e9e9e9;
+	overflow: hidden;
+
+
+}
+
+
+
+/*ITEMS OF BODY*/
+
+#header{
+	display: none;
+	height: 15vh;
+	background-color: black;
+	align-items: center;
+}
+
+#body{
+	display: flex;
+
+
+	justify-content: space-around;
+	
+	flex-direction: column;
+
+
+
+}
+
+#footer{
+	display: none;
+	height: 10vh;
+
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	font-size: 8vh;
+}
+
+
+#header{
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#buttons{
+	display: flex;
+	flex-direction: row;
+	font-size: 4vmin;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+/*END ITEMS OF BODY*/
+
+
+/*
+LOADER BLOCK
+*/
+
+#LOL{
+
+	display: flex;
+	overflow: hidden;
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #FFF;
+	z-index: 5;
+	color: GREEN;
+	flex-direction: column;
+	font-family: 'Noto Color Emoji', sans-serif;
+	font-size: 6vh;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+}
+
+.spinner {
+    height: 0.7vh;
+    width: 0.7vw;
+    border-left: 0.7vh solid greenyellow;
+    border-bottom: 0.7vh solid greenyellow;
+    border-right: 0.7vh solid greenyellow;
+    border-top: 0.7vh solid transparent;
+    border-radius: 50vh;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*END LOADER BLOCK*/
+
+
+/*BLOCK OF CENTRAL WIDGET*/
+#blackboard{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+	height: 85vh;
+}
+
+#ask_value{
+
+    	/*safari shit*/
+    cursor: default;
+
+	
+
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25vmin;
+	border: 1vw solid #B2AE79;
+	/*border-radius: 25vh;*/
+	width: 75vw;
+	height: 75vh;
+	font-family: sunnyspell;
+	
+	background-color: #b5d6b2;
+	color: #560319;
+
+
+	
+	
+}
+
+
+
+#buttons{
+	display: flex;
+
+	
+	align-items: stretch;
+	align-content: space-between;
+
+	
+	justify-content: space-around;
+
+
+
+}
+
+
+#buttons>button{
+	
+	display: flex;
+
+	background-color: white; 
+    color: #371E37; 
+    border: 0.2px solid #C392C1;
+    border-radius: 4em;
+    font-size: 8vmin;
+    font-family: motley;
+
+    cursor: pointer;
+    width: 20vw;
+
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+
+    
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+}
+
+#profile_image{
+	display: flex;
+	font-size: 10vmin;
+	
+	font-family: 'Noto Color Emoji', sans-serif;
+	justify-content: center;
+}
+
+#score_board{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 75vh;
+}
+
+
+/*END BLOCK*/
+
+
+/* FOOTER WIDGET*/
+#sound{
+	display: flex;
+	font-size: 8vmin;
+	justify-content: center;
+
+	align-items: center;
+	border: none;
+
+}
+
+/*END FOOTER WIDGET BLOCK*/
+
+
+#losed_screen{
+	display:none;
+}
+
+/*STARTED MODAL ONBOARDING BLOCK*/
+
+#started_modal{
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	background-color: grey;
+	opacity: 0.92;
+
+	width: 95vw;
+	height: 100vh;
+	background-color: #FFF;
+	z-index: 5;
+	color: GREEN;
+	flex-direction: column;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+
+
+	font-family: motley;
+	font-size: 2vh;
+
+}
+#img{
+	display: flex;
+	width: 15vw;
+	height:	15vh;
+	background: url("../images/onboarding.gif") 100% 100% no-repeat;
+	background-size: contain;
+
+}
+
+#close_modal_button{
+	font-size: 3vh;
+	background-color: #b5d6b2;
+}
+#onboarding{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 65vw;
+}
+
+#current_score{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	font-size: 3vmin;
+	font-family: 'Tilt Prism', cursive;
+}
+
+#best_score{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	font-size: 3vmin;
+	font-family: 'Tilt Prism', cursive;
+}
+
+
+/*END BLOCK*/
+
+
+/*LOSED MODAL SCREEN BLOCK*/
+#losed_modal_screen{
+
+	display: none;
+	color: #321570;
+
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: #AACBD2;
+	z-index: 5;
+	justify-content: space-around;
+	
+	flex-direction: column;
+	font-size: 4vh;
+	font-family: sunnyspell;
+
+}
+#heading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#image{
+	display: flex;
+	width: 100vw;
+	height:	65vh;
+	background: url("../images/when_lose.gif") 50% 50% no-repeat;
+	background-size: contain;
+	justify-content: center;
+	align-items: center;
+
+}
+#losed_buttons{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: row;
+}
+#losed_buttons>button{
+	display: flex;
+	font-size: 4vh;
+	font-family: motley;
+	margin-top: 1vh;
+}
+
+/*END BLOCK*/
